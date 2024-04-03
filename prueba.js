@@ -1,4 +1,6 @@
-const productManager = require("./ProductManager");
+// const productManager = require("./ProductManager");
+
+import productManager from "./scr/ProductManager.js";
 
 
 const elemento = new productManager();

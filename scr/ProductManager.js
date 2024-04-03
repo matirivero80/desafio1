@@ -35,8 +35,8 @@ class productManager{
         }
     }
 
-    addProduct(title,description,price,thumbnail,code,stock){
-        if(!title || !description || !price || !thumbnail || !code || !stock)
+    addProduct(title,description,price,thumbnail=[],code,stock, category, status = true){
+        if(!title || !description || !price || !thumbnail || !code || !stock || !category)
            return "Todos los parametros son obligatorios"
         const codigoInvalido = this.products.find(p=> p.code == code);
         if(codigoInvalido)
@@ -51,7 +51,9 @@ class productManager{
             price:price,
             thumbnail:thumbnail,
             code:code,
-            stock:stock
+            stock:stock,
+            category:category,
+            status:status
            };
 
            this.products.push(productoNuevo);
