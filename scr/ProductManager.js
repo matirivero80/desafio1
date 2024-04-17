@@ -72,11 +72,18 @@ class productManager{
     }
 
     getProductById(id){
+        let status = false;
+        let resp = "producto inexistente"
         const elemento = this.products.find(p => p.id == id)
-        if(elemento)
-           return elemento
-        else
-           return `Not Found ${id}` 
+        if(elemento){
+            status = true;
+            resp = elemento
+        }
+
+        return {status, resp}
+           
+        
+            
 
     }
 
