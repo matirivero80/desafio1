@@ -35,7 +35,7 @@ class productManager{
         }
     }
 
-    addProduct(title,description,price,thumbnail=[],code,stock, category, status = true){
+    addProduct({title,description,price,thumbnail=[],code,stock, category, status = true}){
         if(!title || !description || !price || !thumbnail || !code || !stock || !category)
            return "Todos los parametros son obligatorios"
         const codigoInvalido = this.products.find(p=> p.code == code);

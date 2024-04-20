@@ -1,0 +1,35 @@
+
+<div>
+    <h1>Desafio 5</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titulo</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>Codigo</th>
+                <th>Stock</th>
+                <th>Category</th>
+                <th>Status</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each elemento}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.title}}</td>
+                <td>{{this.decription}}</td>
+                <td>{{this.price}}</td>
+                <td>{{this.code}}</td>
+                <td>{{this.stock}}</td>
+                <td>{{this.category}}</td>
+                <td>{{this.status}}</td>
+                <td>{{this.thumbnails}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

@@ -4,16 +4,17 @@
   "main": "ProductManager.js",
   "type": "module",
   "scripts": {
-     "dev":"nodemon ./scr/app.js",
-     "start": "node ./scr/app.js"
-        
+    "dev": "nodemon ./scr/app.js",
+    "start": "node ./scr/app.js"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "socket.io": "^4.7.5",
+    "soket.io": "^0.0.1-security"
   }
 }

@@ -1,0 +1,42 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 2px solid green;
+    padding: 8 px;
+    text-align: left;
+}
+
+th {
+    background-color: grey;
+}
+
+form{
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px grey;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+
+}
+
+button {
+    border-radius: 5px;
+    background-color: green;
+    color: black;
+}
+
